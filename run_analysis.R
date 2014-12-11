@@ -45,6 +45,10 @@ colnames(dt_DataMessy)[colnames(dt_DataMessy)=="ActivityCode"] <- "ActivityName"
 
 # From the data set in step 4, creates a second, independent tidy data set with 
 # the average of each variable for each activity and each subject.
-dt_dataTidy <- gather(dt_DataMessy, PM, Value, -SubjectID, -ActivityName) %>% 
-    group_by(ActivityName, SubjectID, PM) %>%
-    summarise(VarAve=mean(Value))
+dt_dataTidy <- gather(dt_DataMessy, Variable, Value, -SubjectID, -ActivityName) %>% 
+    group_by(ActivityName, SubjectID, Variable) %>%
+    summarise(VariableAverage=mean(Value))
+
+# Write output tidy data set
+write.table(dt_dataTidy, file="TidyData.txt", row.names=FALSE)
+
