@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-setwd("~/Documents/GettingCleaningData/Project")
+# setwd("~/Documents/GettingCleaningData/Project")
 
 # Load test and train data
 df_XTest <- read.table("./UCI HAR Dataset/test/X_test.txt", 
