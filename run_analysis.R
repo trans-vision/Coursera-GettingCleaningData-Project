@@ -42,6 +42,13 @@ colnames(dt_DataMessy)[colnames(dt_DataMessy)=="ActivityCode"] <- "ActivityName"
 
 
 # Appropriately labels the data set with descriptive variable names. 
+# Remove parentheses and use more descriptive name for leading "t" and "f"
+colnames(dt_DataMessy) <- gsub("\\(\\)", "", colnames(dt_DataMessy))
+colnames(dt_DataMessy) <- gsub("^t", "timeDomain-", colnames(dt_DataMessy))
+colnames(dt_DataMessy) <- gsub("^f", "freqDomain-", colnames(dt_DataMessy))
+colnames(dt_DataMessy) <- gsub("Acc", "Accelerometer", colnames(dt_DataMessy))
+colnames(dt_DataMessy) <- gsub("Gyro", "Gyroscope", colnames(dt_DataMessy))
+
 
 # From the data set in step 4, creates a second, independent tidy data set with 
 # the average of each variable for each activity and each subject.

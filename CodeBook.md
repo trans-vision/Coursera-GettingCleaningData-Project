@@ -1,5 +1,5 @@
-Coursera - Getting and Cleaning Data - Course Project Code Book
-=====================================================
+Getting and Cleaning Data - Course Project Code Book
+====================================================
 
 
 Introduction
@@ -35,7 +35,15 @@ The Activity codes were converted into factors and the 6 factor levels renamed t
 5. Standing
 6. Laying
 
+Variables were renamed to be more descriptive by:
 
+1. Removing parentheses 
+2. Expanding leading "t" to "timeDomain"
+3. Expanding leading "t" to "freqDomain"
+4. Expanding "Acc" to "Acceleration"
+5. Expanding "Gyro" to "Gyroscope"
+
+The data was melted and summarized to create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Variables
 ----
@@ -48,5 +56,5 @@ Variables
     5. Standing
     6. Laying
 2. SubjectID: Integer identifier of the subject.
-3. Variable: Name of the derived variable from the original UCI HAR Data Set.
+3. Variable: Descriptive name of the derived variable from the original UCI HAR Data Set.
 4. VariableAverage: Arithmetic mean of the observations of the original HAR variable. 
