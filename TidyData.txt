@@ -1,4 +1,4 @@
-"ActivityName" "SubjectID" "Variable" "VariableAverage"
+"ActivityName" "SubjectID" "FeatureVariable" "FeatureVariableAverage"
 "Walking" 1 "timeDomain-BodyAccelerometer-mean-X" 0.277330758736842
 "Walking" 1 "timeDomain-BodyAccelerometer-mean-Y" -0.0173838185273684
 "Walking" 1 "timeDomain-BodyAccelerometer-mean-Z" -0.111148103547368

@@ -52,9 +52,9 @@ colnames(dt_DataMessy) <- gsub("Gyro", "Gyroscope", colnames(dt_DataMessy))
 
 # From the data set in step 4, creates a second, independent tidy data set with 
 # the average of each variable for each activity and each subject.
-dt_dataTidy <- gather(dt_DataMessy, Variable, Value, -SubjectID, -ActivityName) %>% 
-    group_by(ActivityName, SubjectID, Variable) %>%
-    summarise(VariableAverage=mean(Value))
+dt_dataTidy <- gather(dt_DataMessy, FeatureVariable, Value, -SubjectID, -ActivityName) %>% 
+    group_by(ActivityName, SubjectID, FeatureVariable) %>%
+    summarise(FeatureVariableAverage=mean(Value))
 
 # Write output tidy data set
 write.table(dt_dataTidy, file="TidyData.txt", row.names=FALSE)

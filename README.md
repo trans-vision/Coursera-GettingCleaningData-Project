@@ -8,7 +8,7 @@ The repository includes the following files:
 
 1. README.md: This file.
 2. CodeBook.md: Describes the variables, data, and transformations carried out.
-2. runanalysis.R: Script for performing the analysis.
+2. run_analysis.R: Script for performing the analysis.
 4. TidyData.txt: The output tidy data set. 
 
 Location of UCI HAR Data Set
@@ -33,3 +33,6 @@ This data set is tidy because:
 2. Each row of the data set is an observation of the average (arithmetic mean) value of of Activity/Subject/Variable. 
 3. The data set represents is a single type of observational unit. 
 
+run_analysis.R
+--------------
+Please refer to CodeBook.md for a description of what the script does. 
