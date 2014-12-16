@@ -49,6 +49,8 @@ fBodyGyroJerkMag,
 Transformations Applied
 -------
 
+Please see [course forum](https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) for a diagram on the structure of the raw data files. 
+
 All the following raw data was loaded as numeric values:
 
 1. Training set (X, Y, and Subject files)
