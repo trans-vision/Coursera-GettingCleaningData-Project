@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-# setwd("~/Documents/GettingCleaningData/Project")
+setwd("~/Documents/GettingCleaningData/Project")
 
 # Load test and train data
 df_XTest <- read.table("./UCI HAR Dataset/test/X_test.txt", 
@@ -46,8 +46,11 @@ colnames(dt_DataMessy)[colnames(dt_DataMessy)=="ActivityCode"] <- "ActivityName"
 colnames(dt_DataMessy) <- gsub("\\(\\)", "", colnames(dt_DataMessy))
 colnames(dt_DataMessy) <- gsub("^t", "timeDomain-", colnames(dt_DataMessy))
 colnames(dt_DataMessy) <- gsub("^f", "freqDomain-", colnames(dt_DataMessy))
+# Use more descriptive name for "Acc" and "Gyro"
 colnames(dt_DataMessy) <- gsub("Acc", "Accelerometer", colnames(dt_DataMessy))
 colnames(dt_DataMessy) <- gsub("Gyro", "Gyroscope", colnames(dt_DataMessy))
+# Correct erroneous repeated "Body" in variable name. 
+colnames(dt_DataMessy) <- gsub("BodyBody", "Body", colnames(dt_DataMessy))
 
 
 # From the data set in step 4, creates a second, independent tidy data set with 

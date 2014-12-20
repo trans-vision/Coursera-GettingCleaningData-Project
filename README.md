@@ -29,7 +29,7 @@ Use the following to load the data in R.
 
 This data set is tidy because:
 
-1. Each column of the data set is a variable (the Activity, Subject ID, Variable, Observed average value). 
+1. Each column of the data set is a variable (the Activity, Subject ID, Feature Variable, Observed average value of Feature Variable). 
 2. Each row of the data set is an observation of the average (arithmetic mean) value of of Activity/Subject/Variable. 
 3. The data set represents is a single type of observational unit. 
 
