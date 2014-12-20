@@ -78,7 +78,7 @@ Feature variables were renamed to be more descriptive by:
 3. Expanding leading "t" to "freqDomain"
 4. Expanding "Acc" to "Acceleration"
 5. Expanding "Gyro" to "Gyroscope"
-6. Correcting erroneously repeated "Body" in variable name (see [course forum](https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) for note on repetition). 
+6. Correcting erroneously repeated "Body" in variable name (see [course forum](https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-382) for note on repetition). 
 
 The data was melted and summarized to create a second, independent tidy data set with the average of each feature variable for each activity and each subject.
 
